@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "764759768859",
+    "project_id": "cantwait28335",
+    "storage_bucket": "cantwait28335.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764759768859:android:708f3bf8aa71e49315ddbe",
+        "android_client_info": {
+          "package_name": "com.szymonwajda.cantwait28"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764759768859-3bsihb1folrtdl9ejsps6b0d5uefkbrp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWEqqVMUV3uG0svc1_9e8p-BeB9aLDoBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764759768859-3bsihb1folrtdl9ejsps6b0d5uefkbrp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "764759768859-tkujr1mmn756a6prnrk2qgi22v4p4ctt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.szymonwajda.cantwait28"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

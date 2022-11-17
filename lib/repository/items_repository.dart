@@ -1,5 +1,6 @@
 import 'package:cantwait28/models/item_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/cupertino.dart';
 
 class ItemsRepository {
   Stream<List<ItemModel>> getItemsStream() {
@@ -19,5 +20,23 @@ class ItemsRepository {
         },
       ).toList();
     });
+  }
+
+  Future<void> delete({required String id}) {
+    return FirebaseFirestore.instance.collection('items').doc(id).delete();
+  }
+
+  Future<void> add(
+    String title,
+    String imageURL,
+    DateTime releaseDate,
+  ) async {
+    await FirebaseFirestore.instance.collection('items').add(
+      {
+        'title': title,
+        'image_url': imageURL,
+        'release_date': releaseDate,
+      },
+    );
   }
 }

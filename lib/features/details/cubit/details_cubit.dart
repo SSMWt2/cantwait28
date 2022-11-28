@@ -1,3 +1,4 @@
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:cantwait28/models/item_model.dart';
 import 'package:cantwait28/repository/items_repository.dart';
@@ -10,6 +11,8 @@ class DetailsCubit extends Cubit<DetailsState> {
 
   Future<void> getItemWithId(String id) async {
     final itemModel = await _itemsRepository.get(id: id);
-    emit(DetailsState(itemModel: itemModel,));
+    emit(DetailsState(
+      itemModel: itemModel,
+    ));
   }
 }
